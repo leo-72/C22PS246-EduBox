@@ -1,4 +1,4 @@
-package com.bangkit.edubox
+package com.bangkit.eduboxregister
 
 import org.junit.Test
 
