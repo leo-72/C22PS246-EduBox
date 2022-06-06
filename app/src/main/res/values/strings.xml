@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EduBox</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    
+    <string name="textWelcome"><b>Welcome,</b> \nSign in to \nContinue</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtSignIn">SignIn</string>
+    <string name="txtNoAcc"><u>Don\'t have an Account yet?</u></string>
+    <string name="usernameEmpty">Username is Empty</string>
+    <string name="username">Username</string>
+    <string name="pass_6_char">Password must be more than 8 Characters</string>
+    <string name="password">Password</string>
+    <string name="str_signin">Sign In</string>
+    <string name="txt_Or">Or</string>
+</resources>
