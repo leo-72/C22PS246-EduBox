@@ -2,11 +2,24 @@
     <string name="app_name">EduBox Register</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="textWelcome"><b>Create an account,</b> \nSign up to\ncreate a new account</string>
+    <string name="txtFullname">Full Name</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPhone">Phone Number</string>
+    <string name="txtClass">Class</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtRePassword">Retype Password</string>
+    <string name="txtSignIn">SignIn</string>
+    <string name="txtNoAcc"><u>Don\'t have an Account yet?</u></string>
+    <string name="usernameEmpty">Username is Empty</string>
+    <string name="pass_6_char">Password must be more than 8 Characters</string>
+    <string name="str_signup">Sign Up</string>
+    <string name="txt_Or">Or</string>
+    <string name="fullnameEmpty">Full Name is Empty</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="genderEmpty">Gender is Empty</string>
+    <string name="txtGender">Gender</string>
+    <string name="phoneEmpty">Phone Number is Empty</string>
+    <string name="classEmpty">Class is Empty</string>
 </resources>

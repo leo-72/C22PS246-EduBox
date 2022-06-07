@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EduBox</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="textWelcome"><b>Buat akun,</b>\nDaftar untuk \nmembuat akun baru</string>
+    <string name="txtFullname">Nama Lengkap</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPhone">Nomor Telepon</string>
+    <string name="txtClass">Kelas</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Kata Sandi</string>
+    <string name="txtRePassword">Ketik Ulang Kata Sandi</string>
+    <string name="txtSignIn">Masuk</string>
+    <string name="txtNoAcc"><u>Belum punya akun?</u></string>
+    <string name="usernameEmpty">Username Kosong</string>
+    <string name="pass_6_char">Kata sandi harus lebih dari 8 karakter</string>
+    <string name="str_signup">Daftar</string>
+    <string name="txt_Or">Atau</string>
+    <string name="fullnameEmpty">Nama Lengkap Kosong</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="genderEmpty">Jenis Kelamin Kosong</string>
+    <string name="txtGender">Jenis Kelamin</string>
+    <string name="phoneEmpty">Nomor Telepon Kosong</string>
+    <string name="classEmpty">Class is Empty</string>
+</resources>
