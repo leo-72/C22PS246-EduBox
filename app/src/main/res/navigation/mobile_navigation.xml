@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/kelas">
+
+    <fragment
+        android:id="@+id/kelas"
+        android:name="com.example.mainuiux.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/quiz"
+        android:name="com.example.mainuiux.ui.quiz.QuizFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/book"
+        android:name="com.example.mainuiux.ui.book.BookFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_book" />
+
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.mainuiux.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
