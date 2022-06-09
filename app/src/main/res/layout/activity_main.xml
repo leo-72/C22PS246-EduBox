@@ -157,7 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/txtNoAcc"
+        android:text="@string/txtHaveAcc"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/component_or"
         app:layout_constraintStart_toStartOf="@+id/component_or"

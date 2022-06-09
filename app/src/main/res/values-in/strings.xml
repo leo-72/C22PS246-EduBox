@@ -13,7 +13,7 @@
     <string name="txtPassword">Kata Sandi</string>
     <string name="txtRePassword">Ketik Ulang Kata Sandi</string>
     <string name="txtSignIn">Masuk</string>
-    <string name="txtNoAcc"><u>Belum punya akun?</u></string>
+    <string name="txtHaveAcc"><u>Sudah punya Akun?</u></string>
     <string name="usernameEmpty">Username Kosong</string>
     <string name="pass_6_char">Kata sandi harus lebih dari 8 karakter</string>
     <string name="str_signup">Daftar</string>

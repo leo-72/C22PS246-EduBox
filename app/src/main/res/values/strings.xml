@@ -11,7 +11,7 @@
     <string name="txtPassword">Password</string>
     <string name="txtRePassword">Retype Password</string>
     <string name="txtSignIn">SignIn</string>
-    <string name="txtNoAcc"><u>Don\'t have an Account yet?</u></string>
+    <string name="txtHaveAcc"><u>Already have an account?</u></string>
     <string name="usernameEmpty">Username is Empty</string>
     <string name="pass_6_char">Password must be more than 8 Characters</string>
     <string name="str_signup">Sign Up</string>
