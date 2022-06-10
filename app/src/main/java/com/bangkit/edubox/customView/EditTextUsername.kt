@@ -35,7 +35,7 @@ class EditTextUsername : TextInputEditText, View.OnTouchListener {
         super.onDraw(canvas)
         setBackgroundResource(R.drawable.border_text_input)
 
-        setHint(R.string.username)
+        setHint(R.string.txtUsername)
         setPadding(30, 30, 30, 30)
         textSize = 12f
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START

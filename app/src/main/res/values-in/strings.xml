@@ -10,9 +10,9 @@
     <string name="txtSignIn">Masuk</string>
     <string name="txtNoAcc"><u>Belum punya akun?</u></string>
     <string name="usernameEmpty">Username Kosong</string>
-    <string name="username">Username</string>
     <string name="pass_6_char">Kata sandi harus lebih dari 8 karakter</string>
-    <string name="password">Kata Sandi</string>
     <string name="str_signin">Masuk</string>
     <string name="txt_Or">Atau</string>
+    <string name="str_new_acc">Buat Akun Baru</string>
+    <string name="txtForgotPass">Lupa Kata Sandi?</string>
 </resources>

@@ -37,7 +37,7 @@ class EditTextPassword : TextInputEditText, View.OnTouchListener {
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         showEyeButton()
-        setHint(R.string.password)
+        setHint(R.string.txtPassword)
         setBackgroundResource(R.drawable.border_text_input)
         setPadding(30, 30, 30, 30)
         textSize = 12f
