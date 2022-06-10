@@ -29,7 +29,7 @@
 
     <style name="fontWelcome" parent="Theme.EduBoxRegister.NoActionBar">
         <item name="android:textSize">28sp</item>
-        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
@@ -40,13 +40,12 @@
     </style>
 
     <style name="editText" parent="Theme.EduBoxRegister.NoActionBar">
-        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="btnCustom" parent="Theme.EduBoxRegister.NoActionBar">
-        <item name="android:fontFamily">@font/inter</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:minWidth">280dp</item>
@@ -56,6 +55,6 @@
 
     <style name="normalText" parent="Theme.EduBoxRegister.NoActionBar">
         <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
     </style>
 </resources>
