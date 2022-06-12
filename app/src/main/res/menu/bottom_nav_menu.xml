@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/kelas"
+        android:icon="@drawable/ic_baseline_class_24"
+        android:title="@string/kelas" />
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/ic_baseline_quiz_24"
+        android:title="@string/kuis" />
+    <item
+        android:id="@+id/book"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="@string/buku" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/akun" />
+
+</menu>

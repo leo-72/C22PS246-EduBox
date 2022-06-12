@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MainUIUX</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="kuis">Kuis</string>
+    <string name="kelas">Kelas</string>
+    <string name="buku">Buku</string>
+    <string name="akun">Akun</string>
+    <string name="selamat_datang">Selamat Datang,</string>
+    <string name="pilih_kuis">Pilih Kuis</string>
+    <string name="list_buku">List Buku</string>
+    <string name="quotes_akun">Asah skills kamu dan raih nilai terbaik. Jangan takut untuk salah, karena sukses berawal dari kesalahan dan selalu mencoba terus-menerus untuk meraih hasil yang terbaik.</string>
+    <string name="kuis_yang_telah_selesai">Kuis yang telah selesai</string>
+    <string name="viii">VIII</string>
+    <string name="muhammad_althoofandy_suprayogi">Muhammad Althoofandy Suprayogi</string>
+    <string name="pilih_pelajaran">Pilih Pelajaran</string>
+    <string name="judul_quiz">Judul Quiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail_kuis">Silahkan Kerjakan Soal dibawah ini</string>
+    <string name="title_activity_quiz_detail">QuizDetailActivity</string>
+    <string name="pembahasan">Pembahasan</string>
+    <string name="pembelajaran">Selamat datang di pembelajaran</string>
+
+
+</resources>
