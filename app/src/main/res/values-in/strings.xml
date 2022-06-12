@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EduBox</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="textWelcomeLogin"><b>Selamat datang,</b>\nMasuk untuk \nmelanjutkan</string>
+    <string name="textWelcomeRegister"><b>Buat akun,</b>\nDaftar untuk \nmembuat akun baru</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Kata Sandi</string>
+    <string name="txtSignIn">Masuk</string>
+    <string name="txtNoAcc"><u>Belum punya akun?</u></string>
+    <string name="usernameEmpty">Username Kosong</string>
+    <string name="pass_6_char">Kata sandi harus lebih dari 8 karakter</string>
+    <string name="str_signin">Masuk</string>
+    <string name="txt_Or">Atau</string>
+    <string name="str_new_acc">Buat Akun Baru</string>
+    <string name="txtForgotPass"><u>Lupa Kata Sandi?</u></string>
+    <string name="txtFullname">Nama Lengkap</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPhone">Nomor Telepon</string>
+    <string name="txtClass">Kelas</string>
+    <string name="txtRePassword">Ketik Ulang Kata Sandi</string>
+    <string name="txtHaveAcc"><u>Sudah punya Akun?</u></string>
+    <string name="str_signup">Daftar</string>
+    <string name="fullnameEmpty">Nama Lengkap Kosong</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="genderEmpty">Jenis Kelamin Kosong</string>
+    <string name="txtGender">Jenis Kelamin</string>
+    <string name="phoneEmpty">Nomor Telepon Kosong</string>
+    <string name="classEmpty">Kelas kosong</string>
+    <string name="email_required">Email Diperlukan</string>
+    <string name="password_required">Password Diperlukan</string>
+    <string name="re_password_required">Ketik Ulang Kata Sandi Diperlukan</string>
+    <string name="password_not_match">Kata sandi tidak cocok</string>
+    <string name="create_account">Buat Akun</string>
+    <string name="please_wait">Mohon Tunggu</string>
+    <string name="registration_success">Pendaftaran Berhasil</string>
+    <string name="registration_failed">Pendaftaran Gagal</string>
+    <string name="email_not_registered">Email tidak terdaftar</string>
+    <string name="email_already_registered">Email sudah Terdaftar</string>
+    <string name="username_exist">Nama pengguna sudah ada</string>
+    <string name="username_doesnt_exists">Nama pengguna tidak ada</string>
+    <string name="doesnt_exists">Tidak ada!</string>
+    <string name="already_exists">sudah ada</string>
+    <string name="email_or_pass_wrong">Email atau Kata Sandi Salah</string>
+    <string name="str_find">Temukan</string>
+    <string name="str_update">Perbarui</string>
+    <string name="textForgotPassPage"><b>Lupa Kata Sandi,</b></string>
+    <string name="textForgotPassPage2">Masukkan Email</string>
+    <string name="textNewPassword"><b>Kata Sandi Baru</b></string>
+    <string name="textNewPassword2">Masukkan kata sandi barumu</string>
+    <string name="email_empty">Email Kosong</string>
+    <string name="pass_empty">Kata Sandi Kosong</string>
+    <string name="email_not_found">Email tidak ditemukan</string>
+    <string name="pass_not_correct">Kata sandi salah</string>
+    <string name="login_failed">Login Gagal</string>
+    <string name="str_new_password">Kata Sandi Baru</string>
+    <string name="str_confirm_new_password">Konfirmasi Kata Sandi Baru</string>
+    <string name="password_updated">Kata sandi telah Diperbarui</string>
+    <string name="classLength">Panjang tidak boleh lebih dari 2 digit</string>
+    <string name="number_phone_invalid">Nomor Telepon Tidak Valid</string>
+    <string name="check_email">Periksa folder Spam di Email Anda</string>
+    <string name="str_send_link">Kirim Tautan</string>
+</resources>
