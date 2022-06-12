@@ -2,6 +2,9 @@ package com.bangkit.eduboxloginregister.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Patterns
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -26,14 +29,15 @@ class ForgotPassActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         ref = FirebaseDatabase.getInstance().getReference("Users")
 
-        moveToNewPasswordActivity()
+        setBtnEnable()
+        editTextListener()
         moveToLoginActivity()
         moveToRegisterActivity()
 
     }
 
-    private fun moveToNewPasswordActivity() {
-        binding.btnFind.setOnClickListener {
+    private fun sendLink() {
+        binding.btnSendLink.setOnClickListener {
             isEmailChecked()
         }
     }
@@ -69,8 +73,40 @@ class ForgotPassActivity : AppCompatActivity() {
         }
     }
 
-    private fun loading(){
-        binding.progressBar.visibility = ProgressBar.VISIBLE
+    private fun editTextListener() {
+        binding.apply {
+            inpEmail.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
 
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            sendLink()
+        }
+    }
+
+    private fun isEmailValid(email: String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
+
+    private fun setBtnEnable() {
+        binding.apply {
+            val email = inpEmail.text.toString()
+
+            btnSendLink.isEnabled =
+                email.isNotEmpty() && isEmailValid(email)
+        }
     }
 }

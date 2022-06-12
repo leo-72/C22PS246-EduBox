@@ -2,7 +2,10 @@ package com.bangkit.eduboxloginregister.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
+import android.util.Patterns
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -29,9 +32,42 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         ref = FirebaseDatabase.getInstance().getReference("Users")
 
-        moveToMain()
+        setBtnEnable()
+        editTextListener()
         moveToForgotPassword()
         moveToRegister()
+    }
+
+    private fun editTextListener() {
+        binding.apply {
+            inpEmail.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                    setBtnEnable()
+                }
+
+                override fun afterTextChanged(p0: Editable?) {
+                    //do nothing
+                }
+            })
+            inpPassword.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                    setBtnEnable()
+                }
+
+                override fun afterTextChanged(p0: Editable?) {
+                    //do nothing
+                }
+            })
+            moveToMain()
+        }
     }
 
     private fun moveToMain() {
@@ -110,6 +146,26 @@ class LoginActivity : AppCompatActivity() {
             binding.inpPassword.requestFocus()
         } else {
             isDataChecked()
+        }
+    }
+
+    private fun isEmailValid(email: String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
+
+    private fun isPasswordValid(password: String): Boolean {
+        return password.length >= 8
+    }
+
+    private fun setBtnEnable() {
+        binding.apply {
+            val email = inpEmail.text.toString()
+            val pass = inpPassword.text.toString()
+
+            btnSignIn.isEnabled =
+                email.isNotEmpty() && pass.isNotEmpty() && isPasswordValid(pass) && isEmailValid(
+                    email
+                )
         }
     }
 }

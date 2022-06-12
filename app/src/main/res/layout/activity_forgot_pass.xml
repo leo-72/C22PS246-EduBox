@@ -52,12 +52,12 @@
         android:layout_marginTop="18dp"
         android:text="@string/txtHaveAcc"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/btnFind"
-        app:layout_constraintStart_toStartOf="@+id/btnFind"
-        app:layout_constraintTop_toBottomOf="@+id/btnFind" />
+        app:layout_constraintEnd_toEndOf="@+id/btnSendLink"
+        app:layout_constraintStart_toStartOf="@+id/btnSendLink"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendLink" />
 
     <com.bangkit.eduboxloginregister.customView.BtnSendLink
-        android:id="@+id/btnFind"
+        android:id="@+id/btnSendLink"
         style="@style/btnCustom"
         android:layout_width="280dp"
         android:layout_height="48dp"

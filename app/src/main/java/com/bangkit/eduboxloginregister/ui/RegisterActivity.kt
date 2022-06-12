@@ -2,7 +2,10 @@ package com.bangkit.eduboxloginregister.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
+import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -27,15 +30,13 @@ class RegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         ref = FirebaseDatabase.getInstance().getReference("Users")
 
-        binding.btnSignUp.setOnClickListener {
-            confirmData()
-        }
+        setBtnEnable()
+        editTextListener()
 
         binding.txtHaveAnAccount.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
-
 
     private fun confirmData() {
         binding.apply {
@@ -219,6 +220,177 @@ class RegisterActivity : AppCompatActivity() {
                     .show()
                 binding.progressBar.visibility = View.GONE
             }
+        }
+    }
+
+    private fun editTextListener() {
+        binding.apply {
+            inpFullname.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            inpGender.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            inpEmail.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            inpPhone.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            inpClass.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            inpUsername.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            inpPassword.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    //do nothing
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    //do nothing
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    setBtnEnable()
+                }
+            })
+            binding.btnSignUp.setOnClickListener {
+                confirmData()
+            }
+        }
+
+    }
+
+    private fun isEmailValid(email: String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
+
+    private fun isPasswordValid(password: String): Boolean {
+        return password.length >= 8
+    }
+
+    private fun isPhoneValid(phone: String): Boolean {
+        return Patterns.PHONE.matcher(phone).matches()
+    }
+
+    private fun setBtnEnable() {
+        binding.apply {
+            val name = inpFullname.text.toString().trim()
+            val gender = inpGender.text.toString().trim()
+            val email = inpEmail.text.toString().trim()
+            val phone = inpPhone.text.toString().trim()
+            val classUser = inpClass.text.toString().trim()
+            val username = inpUsername.text.toString().trim()
+            val pass = inpPassword.text.toString().trim()
+
+            btnSignUp.isEnabled =
+                name.isNotEmpty() &&
+                        gender.isNotEmpty() &&
+                        email.isNotEmpty() &&
+                        phone.isNotEmpty() &&
+                        isPhoneValid(phone) &&
+                        classUser.isNotEmpty() &&
+                        username.isNotEmpty() &&
+                        pass.isNotEmpty() &&
+                        isPasswordValid(pass) &&
+                        isEmailValid(email)
         }
     }
 
