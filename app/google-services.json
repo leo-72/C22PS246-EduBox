@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "77356447988",
+    "firebase_url": "https://edubox-2ad36-default-rtdb.firebaseio.com",
+    "project_id": "edubox-2ad36",
+    "storage_bucket": "edubox-2ad36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77356447988:android:d26ce15ebd397aee2d06a1",
+        "android_client_info": {
+          "package_name": "com.bangkit.eduboxloginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77356447988-lo2dtit8r86rn7fp3dh5iveuao2109pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqI5lPrFJ2ctOy-mOOtQ0OAkhb8ZKbPFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77356447988-lo2dtit8r86rn7fp3dh5iveuao2109pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77356447988:android:02e4f95704d08e7d2d06a1",
+        "android_client_info": {
+          "package_name": "com.example.mainuiux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77356447988-lo2dtit8r86rn7fp3dh5iveuao2109pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqI5lPrFJ2ctOy-mOOtQ0OAkhb8ZKbPFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77356447988-lo2dtit8r86rn7fp3dh5iveuao2109pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
